@@ -1,5 +1,3 @@
-package documentation
-
 import scala.util.chaining._
 import util._
 
