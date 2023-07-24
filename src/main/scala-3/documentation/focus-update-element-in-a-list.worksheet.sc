@@ -27,3 +27,7 @@ anna
 bob
   .focus(_.debitCards.index(1).as[DebitCard].expirationDate)
   .replace(YearMonth.of(2026, 2))
+
+// replace had no effect on bob because he doesn't have a debit card.
+// index only targets the object at the specified key. If there is no value at this key, then replace and modify are no-operation.
+// index also works on other "indexable" datastructures such as Vector or Map.
