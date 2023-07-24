@@ -8,9 +8,10 @@ object Versions {
   val scala3Version = "3.3.0"
 
   // 3rd party libraries
-  val monocleVersion = "3.2.0"
-  val munitVersion   = "0.7.29"
-  val slf4jVersion   = "2.0.7"
+  val monocleVersion   = "3.2.0"
+  val alleycatsVersion = "2.9.0"
+  val munitVersion     = "0.7.29"
+  val slf4jVersion     = "2.0.7"
 
   // compiler plugins
   val kindProjectorVersion    = "0.13.2"

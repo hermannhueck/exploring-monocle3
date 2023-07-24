@@ -4,11 +4,12 @@ object Dependencies {
 
   import Versions._
 
-  lazy val monocleCore  = "dev.optics"    %% "monocle-core"  % monocleVersion
-  lazy val monocleMacro = "dev.optics"    %% "monocle-macro" % monocleVersion
-  lazy val munit        = "org.scalameta" %% "munit"         % munitVersion
-  lazy val slf4jApi     = "org.slf4j"      % "slf4j-api"     % slf4jVersion
-  lazy val slf4jSimple  = "org.slf4j"      % "slf4j-simple"  % slf4jVersion
+  lazy val monocleCore   = "dev.optics"    %% "monocle-core"   % monocleVersion
+  lazy val monocleMacro  = "dev.optics"    %% "monocle-macro"  % monocleVersion
+  lazy val alleycatsCore = "org.typelevel" %% "alleycats-core" % alleycatsVersion
+  lazy val munit         = "org.scalameta" %% "munit"          % munitVersion
+  lazy val slf4jApi      = "org.slf4j"      % "slf4j-api"      % slf4jVersion
+  lazy val slf4jSimple   = "org.slf4j"      % "slf4j-simple"   % slf4jVersion
 
   // https://github.com/typelevel/kind-projector
   lazy val kindProjectorPlugin    = compilerPlugin(
@@ -22,6 +23,7 @@ object Dependencies {
   lazy val compilerDependencies = Seq(
     monocleCore,
     monocleMacro,
+    alleycatsCore,
     munit,
     slf4jApi,
     slf4jSimple
