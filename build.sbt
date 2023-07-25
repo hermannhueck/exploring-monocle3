@@ -12,7 +12,7 @@ Global / onChangedBuildSource      := ReloadOnSourceChanges
 
 lazy val commonSettings = Seq(
   version            := projectVersion,
-  scalaVersion       := scala2Version,
+  scalaVersion       := scala3Version,
   crossScalaVersions := Seq(scala2Version, scala3Version),
   publish / skip     := true,
   semanticdbEnabled  := true,
