@@ -6,6 +6,7 @@
 // intrinsic operations:
 // - get: S => A
 // - reverseGet (aka apply): A => S
+
 case class Person(name: String, age: Int)
 
 import monocle.Iso
