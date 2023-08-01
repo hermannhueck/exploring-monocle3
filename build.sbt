@@ -11,17 +11,17 @@ ThisBuild / includePluginResolvers := true // default: false
 Global / onChangedBuildSource      := ReloadOnSourceChanges
 
 lazy val commonSettings = Seq(
-  version           := projectVersion,
-  scalaVersion      := scala2Version,
-  // crossScalaVersions := Seq(scala2Version, scala3Version),
-  publish / skip    := true,
-  semanticdbEnabled := true,
-  semanticdbVersion := scalafixSemanticdb.revision,
+  version            := projectVersion,
+  scalaVersion       := scala2Version,
+  crossScalaVersions := Seq(scala2Version, scala3Version),
+  publish / skip     := true,
+  semanticdbEnabled  := true,
+  semanticdbVersion  := scalafixSemanticdb.revision,
   // scalafixDependencies ++= Seq("com.github.liancheng" %% "organize-imports" % scalafixOrganizeImportsVersion),
   // Test / parallelExecution := false,
   // run 100 tests for each property // -s = -minSuccessfulTests
   // Test / testOptions += Tests.Argument(TestFrameworks.ScalaCheck, "-s", "100"),
-  initialCommands   :=
+  initialCommands    :=
     s"""|
         |import scala.util.chaining._
         |import scala.concurrent.duration._
