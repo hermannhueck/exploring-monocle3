@@ -9,8 +9,8 @@ object Versions {
 
   // 3rd party libraries
   val monocleVersion   = "3.2.0"
-  val alleycatsVersion = "2.9.0"
-  val circeVersion     = "0.14.1"
+  val alleycatsVersion = "2.10.0"
+  val circeVersion     = "0.14.1" // circe-optics is not available for versions higher than 0.14.1
   val quicklensVersion = "1.9.6"
   val munitVersion     = "0.7.29"
   val slf4jVersion     = "2.0.7"
