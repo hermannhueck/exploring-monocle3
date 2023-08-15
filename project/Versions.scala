@@ -11,6 +11,7 @@ object Versions {
   val monocleVersion   = "3.2.0"
   val alleycatsVersion = "2.9.0"
   val circeVersion     = "0.14.1"
+  val quicklensVersion = "1.9.6"
   val munitVersion     = "0.7.29"
   val slf4jVersion     = "2.0.7"
 
